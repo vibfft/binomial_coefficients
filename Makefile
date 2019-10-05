@@ -1,13 +1,11 @@
 #---------------------------------------------------
-# Makefile for Hello.c with macros
+# Makefile for Subset.c 
 #---------------------------------------------------
-ASSIGNMENT = assign1
 EXEBIN = Subset
 SOURCES = $(EXEBIN).c
 OBJECTS = $(EXEBIN).o
 FLAGS = -std=c99 -Wall
 FILES = $(SOURCES) Makefile
-SUBMIT = submit cse015-pt.f19 $(ASSIGNMENT)
 $(EXEBIN) : $(OBJECTS)
 	gcc -o $(EXEBIN) $(OBJECTS)
 $(OBJECTS) : $(SOURCES)
